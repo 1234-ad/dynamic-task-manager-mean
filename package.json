@@ -1,0 +1,29 @@
+{
+  "name": "dynamic-task-manager-mean",
+  "version": "1.0.0",
+  "description": "A comprehensive MEAN stack task management platform",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && ng serve",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd frontend && ng build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mean",
+    "mongodb",
+    "express",
+    "angular",
+    "nodejs",
+    "task-management",
+    "real-time",
+    "collaboration"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
